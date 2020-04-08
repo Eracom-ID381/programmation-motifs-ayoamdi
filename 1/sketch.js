@@ -6,6 +6,17 @@ function setup() {
 }
 
 function draw() {
+
+    strokeWeight(2);
+    stroke(255);
+    let lineX = 0;
+    while (lineX < width) {
+        line(lineX, 0, random(0, 1650), 1000);
+        lineX = lineX + 10;
+    }
+
+    //personnage//
+    noStroke();
     fill(0)
     ellipse(width / 2, height / 2, 500);
 
@@ -28,7 +39,7 @@ function draw() {
     ellipse(width / 2 - 80, height / 2 - 70, 200, 50);
 
 
-
+    //grille de point//
     fill(0);
     noStroke();
     for (let x = 10; x < width; x = x + 20) {
