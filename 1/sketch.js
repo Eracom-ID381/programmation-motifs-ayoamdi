@@ -16,28 +16,37 @@ function draw() {
     }
 
     //personnage//
-    noStroke();
-    fill(0)
-    ellipse(width / 2, height / 2, 500);
+    //noStroke();
+    //fill(0)
+    //ellipse(width / 2, height / 2, 500);
 
-    fill(255);
-    ellipse(width / 2, height / 2 + 60, 210, 180)
+    //fill(255);
+    //ellipse(width / 2, height / 2 + 60, 210, 180)
 
-    fill(0)
-    ellipse(width / 2, height / 2 + 20, 220);
+    //fill(0)
+    //ellipse(width / 2, height / 2 + 20, 220);
+
+    //fill(255)
+    //ellipse(width / 2 + 480, height / 2 - 100, 250);
+
+    //fill(255)
+    //ellipse(width / 2 - 80, height / 2 - 50, 50);
+
+    //fill(0)
+    //ellipse(width / 2 + 80, height / 2 - 70, 200, 50);
+
+    //fill(255)
+    //ellipse(width / 2 - 80, height / 2 - 70, 200, 50);
 
     fill(255)
-    ellipse(width / 2 + 80, height / 2 - 50, 50);
+    let circleW = 0;
+    let circleH = 0;
+    while (circleW < width && circleH < height) {
+        ellipse(circleW, circleH, 100)
+        circleW = circleW + 170;
+        circleH = circleH + 100;
 
-    fill(255)
-    ellipse(width / 2 - 80, height / 2 - 50, 50);
-
-    fill(0)
-    ellipse(width / 2 + 80, height / 2 - 70, 200, 50);
-
-    fill(0)
-    ellipse(width / 2 - 80, height / 2 - 70, 200, 50);
-
+    }
 
     //grille de point//
     fill(0);
