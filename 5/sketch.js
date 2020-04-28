@@ -1,21 +1,77 @@
 function setup() {
-  let navWidth = document.getElementById("nav").offsetWidth;
-  let canvas = createCanvas(windowWidth - navWidth, windowHeight);
-  canvas.parent('canvas');
-  background(255);
+    let navWidth = document.getElementById("nav").offsetWidth;
+    let canvas = createCanvas(windowWidth - navWidth, windowHeight);
+    canvas.parent('canvas');
+    background(255);
 }
 
 function draw() {
-  let x = 10;
-  fill(0);
-  while (x < width) {
-    ellipse(x, height / 2, 10, 10);
-    x = x + 30;
-  }
+    colorMode(HSB, 255)
+
+    background(170, 255, 255);
+
+
+    //stroke(25, 255, 255);
+    //for (let x6 = 90; x6 < width; x6 = x6 + 90) {
+    //    for (let y6 = 90; y6 < height; y6 = y6 + 90) {
+    //        triangle(width / 2, height / 2, width / 2 - x6, height / 2 + y6, width / 2 + x6, height / 2 + y6)
+    //    }
+    //}
+
+    //triangle rouge//
+    fill(0, 0, 0, 1);
+    stroke(255, 255, 255);
+
+    let x = 10;
+    while (x < width) {
+        triangle(x, height / 2 + 350, x, height / 2 + 350, width / 2, height / 2);
+        x = x + 30;
+    }
+    //triangle rouge du haut//
+    let x3 = 10;
+    while (x3 < width) {
+        triangle(x3, height / 2 - 350, x3, height / 2 - 350, width / 2, height / 2);
+        x3 = x3 + 30;
+    }
+    //triangle orange//
+    stroke(30, 255, 255);
+
+    let x1 = 10;
+    while (x1 < width) {
+        triangle(x1, height / 2 - 150, x1, height / 2 + 150, width / 2, height / 2);
+        x1 = x1 + 30;
+    }
+
+
+    //triangle bleu droite//
+    stroke(120, 255, 255);
+
+    let x4 = 30;
+    while (x4 < width) {
+        triangle(width / 2 + x4, height - 10, width / 2 + x4 + 30, height - 10, width, 0);
+        x4 = x4 + 60;
+    }
+
+    //triangle bleu gauche//
+
+    let x5 = 30;
+    while (x5 < width) {
+        triangle(width / 2 - x5, height - 10, width / 2 - x5 + 30, height - 10, 0, 0);
+        x5 = x5 + 60;
+    }
+
+
+    //let x6 = 30;
+    //while (x6 < width) {
+    //    triangle(width / 2 + x6, height - 10, width / 2 - x6, height - 10, width / 2, height / 2);
+    //    x6 = x6 + 90;
+    //}
+
+
 }
 
 function windowResized() {
-  let navWidth = document.getElementById("nav").offsetWidth;
-  resizeCanvas(windowWidth - navWidth, windowHeight);
-  background(255);
+    let navWidth = document.getElementById("nav").offsetWidth;
+    resizeCanvas(windowWidth - navWidth, windowHeight);
+    background(255);
 }

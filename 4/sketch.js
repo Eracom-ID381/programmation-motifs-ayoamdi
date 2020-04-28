@@ -15,8 +15,8 @@ function draw() {
             ellipse(eliX, eliY, 50, 50);
         }
     }
-    //cercle rouge//
-
+    //cercle disco//
+    noStroke()
     fill(random(0, 255), 255, 255);
     ellipse(width / 2, height - 500, 400, 400)
 
@@ -24,7 +24,7 @@ function draw() {
     stroke(0, 255, 255);
     fill(170, 255, 255);
     for (let eliX = 20; eliX < width; eliX = eliX + 30) {
-        for (eliY = height / 2; eliY < height; eliY = eliY + 30) {
+        for (eliY = height / 2 - 8; eliY < height; eliY = eliY + 30) {
             ellipse(eliX, eliY, 50, 50);
         }
     }
