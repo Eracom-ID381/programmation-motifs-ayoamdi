@@ -8,6 +8,7 @@ function setup() {
 function draw() {
     noStroke();
     colorMode(HSL), 255;
+    rectMode(CENTER);
 
     fill(0, 0, random(0, 255), 200);
     for (let rectX8 = 50; rectX8 < width; rectX8 = rectX8 + 85) {
