@@ -16,8 +16,10 @@ function draw() {
         }
     }
     //cercle rouge//
-    fill(0, 255, 255);
+
+    fill(random(0, 255), 255, 255);
     ellipse(width / 2, height - 500, 400, 400)
+
     //cercles du bas//
     stroke(0, 255, 255);
     fill(170, 255, 255);
@@ -27,10 +29,8 @@ function draw() {
         }
     }
 
-
     //ligne bleu//
     stroke(170, 255, 255);
-
     for (let lineX1 = 0; lineX1 < width; lineX1 = lineX1 + 30) {
         line(lineX1, random(0, 1060), 0, 0);
     }

@@ -6,10 +6,33 @@ function setup() {
 }
 
 function draw() {
+    background(random(250, 255));
+
+
+    fill(random(240, 250));
+    ellipse(width / 2 - 15, height / 2 - 15, 1500, 1500);
+
+    fill(random(200, 240));
+    ellipse(width / 2 - 15, height / 2 - 15, 950, 950);
+
+    fill(random(160, 200));
+    ellipse(width / 2 - 15, height / 2 - 15, 750, 750);
+
+    fill(random(120, 160));
+    ellipse(width / 2 - 15, height / 2 - 15, 550, 550);
+
+    fill(random(40, 80));
+    ellipse(width / 2 - 15, height / 2 - 15, 350, 350);
+
+    fill(random(20, 40));
+    ellipse(width / 2 - 15, height / 2 - 15, 200, 200);
+
+    fill(random(0, 20));
+    ellipse(width / 2 - 15, height / 2 - 15, 40, 40);
+
+
+
     rectMode(CENTER);
-    //let x = 10;
-
-
     //rect base//
     fill(200);
     for (let rectX = 20; rectX < width; rectX = rectX + 50) {
@@ -46,27 +69,19 @@ function draw() {
     }
 
     ellipseMode(CENTER);
-    //noStroke();
-    fill(255);
-    for (let circleSize = 0; circleSize < width; circleSize = circleSize + 50) {
-
-        ellipse(width / 2 - 15, height / 2 - 15, circleSize)
-
-
-    }
+    noStroke();
+    //fill(255);
+    //for (let circleSize = 0; circleSize < width; circleSize = circleSize + 50) {
+    //    ellipse(width / 2 - 15, height / 2 - 15, circleSize)
+    //}
     //for (let gradient = 0; gradient < 499; gradient = gradient + 50)
 
-    //fill(500);
-    //ellipse(width / 2 - 15, height / 2 - 15, 500, 500);
 
-    //fill(150);
-    //ellipse(width / 2 - 15, height / 2 - 15, 350, 350);
 
-    //fill(100);
-    //ellipse(width / 2 - 15, height / 2 - 15, 200, 200);
 
-    //fill(50);
-    //ellipse(width / 2 - 15, height / 2 - 15, 40, 40);
+
+
+
 
 }
 
