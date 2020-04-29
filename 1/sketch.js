@@ -61,9 +61,6 @@ function draw() {
 
 }
 
-
-
-
 function windowResized() {
     let navWidth = document.getElementById("nav").offsetWidth;
     resizeCanvas(windowWidth - navWidth, windowHeight);

@@ -10,6 +10,7 @@ function draw() {
     colorMode(HSL), 255;
     rectMode(CENTER);
 
+    //carrés glitchés//
     fill(0, 0, random(0, 255), 200);
     for (let rectX8 = 50; rectX8 < width; rectX8 = rectX8 + 85) {
         for (let rectY8 = 10; rectY8 < height; rectY8 = rectY8 + 85) {
@@ -17,7 +18,7 @@ function draw() {
         }
     }
 
-
+    //carré du plus foncé au plus clair (par ordre de lecture)//
     fill(0, 0, 60, 200);
     for (let rectX7 = 50; rectX7 < width; rectX7 = rectX7 + 80) {
         for (let rectY7 = 10; rectY7 < height; rectY7 = rectY7 + 80) {
@@ -25,17 +26,12 @@ function draw() {
         }
     }
 
-
-
     fill(0, 0, 50, 200);
     for (let rectX6 = 50; rectX6 < width; rectX6 = rectX6 + 75) {
         for (let rectY6 = 10; rectY6 < height; rectY6 = rectY6 + 75) {
             rect(rectX6, rectY6, 35, 35);
         }
     }
-
-
-
 
     fill(0, 0, 40, 200);
     for (let rectX5 = 50; rectX5 < width; rectX5 = rectX5 + 70) {
@@ -73,14 +69,4 @@ function draw() {
         }
     }
 
-
-
-
-    //    let rectX2 = rectX;
-    //    let rectY2 = rectY;
-    //    while (rectY2 < height && rectX2 < width) {
-    //        rect(rectX2, rectY2, 20, 20);
-    //        rectX2 = rectX2 + 5;
-    //        rectY2 = rectY2 + 5;
-    //    }
 }

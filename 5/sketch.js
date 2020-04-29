@@ -9,15 +9,6 @@ function draw() {
     colorMode(HSB, 255)
 
     background(170, 255, 255);
-
-
-    //stroke(25, 255, 255);
-    //for (let x6 = 90; x6 < width; x6 = x6 + 90) {
-    //    for (let y6 = 90; y6 < height; y6 = y6 + 90) {
-    //        triangle(width / 2, height / 2, width / 2 - x6, height / 2 + y6, width / 2 + x6, height / 2 + y6)
-    //    }
-    //}
-
     //triangle rouge//
     fill(0, 0, 0, 1);
     stroke(255, 255, 255);
@@ -59,13 +50,6 @@ function draw() {
         triangle(width / 2 - x5, height - 10, width / 2 - x5 + 30, height - 10, 0, 0);
         x5 = x5 + 60;
     }
-
-
-    //let x6 = 30;
-    //while (x6 < width) {
-    //    triangle(width / 2 + x6, height - 10, width / 2 - x6, height - 10, width / 2, height / 2);
-    //    x6 = x6 + 90;
-    //}
 
 
 }

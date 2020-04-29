@@ -8,7 +8,7 @@ function setup() {
 function draw() {
     background(random(250, 255));
 
-
+    //cercles du centres//
     fill(random(240, 250));
     ellipse(width / 2 - 15, height / 2 - 15, 1500, 1500);
 
@@ -67,21 +67,6 @@ function draw() {
         for (let y3 = 12 + height / 2; y3 < height / 2 + height / 2; y3 = y3 + 50)
             rect(x3, y3, 5, 25);
     }
-
-    ellipseMode(CENTER);
-    noStroke();
-    //fill(255);
-    //for (let circleSize = 0; circleSize < width; circleSize = circleSize + 50) {
-    //    ellipse(width / 2 - 15, height / 2 - 15, circleSize)
-    //}
-    //for (let gradient = 0; gradient < 499; gradient = gradient + 50)
-
-
-
-
-
-
-
 
 }
 
